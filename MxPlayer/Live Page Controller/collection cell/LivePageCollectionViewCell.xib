@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="LivePageCollectionViewCell" customModule="MxPlayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="256"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="256"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="L3" translatesAutoresizingMaskIntoConstraints="NO" id="0QQ-TJ-IKu">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="256"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="IKe-jf-7Uz"/>
+                            <constraint firstAttribute="height" constant="256" id="M5X-yl-L4u"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEl-xE-Cnj">
+                        <rect key="frame" x="127" y="8" width="48" height="20"/>
+                        <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Y7L-ah-yxW"/>
+                            <constraint firstAttribute="width" constant="48" id="v4w-LH-ljS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Abc" translatesAutoresizingMaskIntoConstraints="NO" id="wYg-oD-bQR">
+                        <rect key="frame" x="8" y="8" width="46" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="8MO-H2-yW5"/>
+                            <constraint firstAttribute="height" constant="15" id="uMk-tV-LpS"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="WnX-tW-02x">
+                        <rect key="frame" x="8" y="203" width="167" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCD-LM-S6O">
+                                <rect key="frame" x="0.0" y="0.0" width="167" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jl-sx-hqK">
+                                <rect key="frame" x="0.0" y="23" width="167" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="9zh-PI-kJR"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0QQ-TJ-IKu" secondAttribute="bottom" id="7b0-l0-f4m"/>
+                <constraint firstItem="wYg-oD-bQR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="JOV-d1-qmb"/>
+                <constraint firstAttribute="trailing" secondItem="0QQ-TJ-IKu" secondAttribute="trailing" id="U09-hf-HOQ"/>
+                <constraint firstItem="EEl-xE-Cnj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="bm5-6f-c5W"/>
+                <constraint firstItem="wYg-oD-bQR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="fZ9-Js-vIe"/>
+                <constraint firstItem="WnX-tW-02x" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="gG5-gV-hRI"/>
+                <constraint firstAttribute="trailing" secondItem="EEl-xE-Cnj" secondAttribute="trailing" constant="5" id="iIC-gX-IbH"/>
+                <constraint firstItem="0QQ-TJ-IKu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oK1-Xz-ZTR"/>
+                <constraint firstItem="WnX-tW-02x" firstAttribute="top" secondItem="wYg-oD-bQR" secondAttribute="bottom" constant="180" id="wUv-Mv-A29"/>
+                <constraint firstAttribute="trailing" secondItem="WnX-tW-02x" secondAttribute="trailing" constant="5" id="y0D-D9-rwh"/>
+                <constraint firstItem="0QQ-TJ-IKu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yFp-vd-dBo"/>
+            </constraints>
+            <size key="customSize" width="304" height="323"/>
+            <connections>
+                <outlet property="imageLive" destination="0QQ-TJ-IKu" id="kZ3-5l-X1v"/>
+                <outlet property="liveViewLabel" destination="EEl-xE-Cnj" id="ibI-r7-hk7"/>
+                <outlet property="logoStetus" destination="wYg-oD-bQR" id="FlJ-57-oyh"/>
+                <outlet property="nameLabel" destination="1Jl-sx-hqK" id="Mgs-uo-UIe"/>
+                <outlet property="statusLabel" destination="oCD-LM-S6O" id="hCj-lA-Juu"/>
+            </connections>
+            <point key="canvasLocation" x="119.08396946564885" y="78.16901408450704"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="L3" width="736" height="736"/>
+        <image name="Logo Abc" width="156" height="81"/>
+    </resources>
+</document>

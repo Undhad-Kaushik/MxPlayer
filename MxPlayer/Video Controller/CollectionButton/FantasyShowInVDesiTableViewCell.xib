@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Tcell10" rowHeight="146" id="rlh-5U-fli" customClass="FantasyShowInVDesiTableViewCell" customModule="MxPlayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rlh-5U-fli" id="UZK-bl-uV7">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c27" translatesAutoresizingMaskIntoConstraints="NO" id="Wcs-Dp-Cqf">
+                        <rect key="frame" x="4" y="5" width="150" height="136"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="qZx-MQ-M2H"/>
+                            <constraint firstAttribute="height" constant="136" id="yAG-wt-f3j"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbk-5U-3Eq">
+                        <rect key="frame" x="159" y="4" width="228" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="O9t-Rs-Ubm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NT-aP-Xzq">
+                        <rect key="frame" x="159" y="29" width="228" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="ysf-m3-pEe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9NT-aP-Xzq" firstAttribute="leading" secondItem="Wcs-Dp-Cqf" secondAttribute="trailing" constant="5" id="0T7-rU-8zC"/>
+                    <constraint firstAttribute="bottom" secondItem="Wcs-Dp-Cqf" secondAttribute="bottom" constant="5" id="2pN-15-lJH"/>
+                    <constraint firstItem="9NT-aP-Xzq" firstAttribute="top" secondItem="Kbk-5U-3Eq" secondAttribute="bottom" constant="5" id="2wH-cf-IG1"/>
+                    <constraint firstItem="Wcs-Dp-Cqf" firstAttribute="top" secondItem="UZK-bl-uV7" secondAttribute="top" constant="5" id="JkX-Xp-Cj7"/>
+                    <constraint firstAttribute="trailing" secondItem="9NT-aP-Xzq" secondAttribute="trailing" constant="4" id="NcU-RQ-bf5"/>
+                    <constraint firstAttribute="bottom" secondItem="Wcs-Dp-Cqf" secondAttribute="bottom" constant="5" id="VS3-qa-fo1"/>
+                    <constraint firstItem="Wcs-Dp-Cqf" firstAttribute="leading" secondItem="UZK-bl-uV7" secondAttribute="leading" constant="4" id="aKQ-CR-ia2"/>
+                    <constraint firstAttribute="trailing" secondItem="Kbk-5U-3Eq" secondAttribute="trailing" constant="4" id="bOp-o8-wfO"/>
+                    <constraint firstItem="Kbk-5U-3Eq" firstAttribute="leading" secondItem="Wcs-Dp-Cqf" secondAttribute="trailing" constant="5" id="g8h-fJ-2fz"/>
+                    <constraint firstItem="Kbk-5U-3Eq" firstAttribute="top" secondItem="UZK-bl-uV7" secondAttribute="top" constant="4" id="rtu-WY-hBQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="tH3-hd-7Wi"/>
+            <connections>
+                <outlet property="imageFantasyShow" destination="Wcs-Dp-Cqf" id="lvm-BO-xgv"/>
+                <outlet property="nameFantasyShowLabel" destination="Kbk-5U-3Eq" id="en0-rK-Fle"/>
+                <outlet property="subTitleFantasyShowLabel" destination="9NT-aP-Xzq" id="5ol-ih-rfW"/>
+            </connections>
+            <point key="canvasLocation" x="133.58778625954199" y="-89.436619718309871"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="c27" width="1200" height="630"/>
+    </resources>
+</document>

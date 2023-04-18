@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchBarPopView" customModule="MxPlayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqW-Qm-G5t">
+                    <rect key="frame" x="4" y="59" width="385" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0ke-fz-t4w">
+                            <rect key="frame" x="4" y="11.999999999999996" width="26" height="26.333333333333332"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="E0P-YU-Dkg"/>
+                                <constraint firstAttribute="width" constant="26" id="q9A-o9-Cnl"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcq-4B-OkT">
+                            <rect key="frame" x="304" y="7" width="77" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="0ra-It-L8m"/>
+                                <constraint firstAttribute="width" constant="77" id="Nfe-21-MRE"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="gray" title="Cancel"/>
+                            <connections>
+                                <action selector="cancelButtontapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="ULE-II-bjE"/>
+                            </connections>
+                        </button>
+                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="9ne-dP-E2s">
+                            <rect key="frame" x="42" y="2" width="252" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="252" id="2GP-0X-2sy"/>
+                                <constraint firstAttribute="height" constant="46" id="fbV-4s-nS6"/>
+                            </constraints>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="0ke-fz-t4w" firstAttribute="top" secondItem="mqW-Qm-G5t" secondAttribute="top" constant="11" id="9Fe-65-rSc"/>
+                        <constraint firstAttribute="height" constant="50" id="FDC-D5-Lwk"/>
+                        <constraint firstItem="Pcq-4B-OkT" firstAttribute="top" secondItem="mqW-Qm-G5t" secondAttribute="top" constant="7" id="FoV-Ka-lux"/>
+                        <constraint firstItem="0ke-fz-t4w" firstAttribute="leading" secondItem="mqW-Qm-G5t" secondAttribute="leading" constant="4" id="GdD-wt-tN6"/>
+                        <constraint firstItem="Pcq-4B-OkT" firstAttribute="leading" secondItem="9ne-dP-E2s" secondAttribute="trailing" constant="10" id="Oca-fB-3lF"/>
+                        <constraint firstAttribute="trailing" secondItem="Pcq-4B-OkT" secondAttribute="trailing" constant="4" id="UCi-mG-hbI"/>
+                        <constraint firstAttribute="bottom" secondItem="0ke-fz-t4w" secondAttribute="bottom" constant="11" id="dtQ-FY-xTj"/>
+                        <constraint firstAttribute="bottom" secondItem="Pcq-4B-OkT" secondAttribute="bottom" constant="7" id="egG-Qg-Z13"/>
+                        <constraint firstItem="9ne-dP-E2s" firstAttribute="top" secondItem="mqW-Qm-G5t" secondAttribute="top" constant="2" id="qA8-TT-Why"/>
+                        <constraint firstAttribute="bottom" secondItem="9ne-dP-E2s" secondAttribute="bottom" constant="2" id="w9c-da-EHc"/>
+                        <constraint firstItem="9ne-dP-E2s" firstAttribute="leading" secondItem="0ke-fz-t4w" secondAttribute="trailing" constant="12" id="xv8-Ca-WSs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mqW-Qm-G5t" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="E8n-po-FlW"/>
+                <constraint firstItem="mqW-Qm-G5t" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="WVP-ST-XiN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mqW-Qm-G5t" secondAttribute="trailing" constant="4" id="hoY-y5-Mvy"/>
+            </constraints>
+            <connections>
+                <outlet property="cancelButton" destination="Pcq-4B-OkT" id="C93-eo-zYZ"/>
+                <outlet property="image" destination="0ke-fz-t4w" id="D8p-EI-HHW"/>
+                <outlet property="popView" destination="mqW-Qm-G5t" id="wkj-JC-FzS"/>
+                <outlet property="searchBar" destination="9ne-dP-E2s" id="fM7-25-7CX"/>
+            </connections>
+            <point key="canvasLocation" x="1150" y="501"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

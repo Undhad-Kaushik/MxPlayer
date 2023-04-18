@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Tcell9" rowHeight="146" id="5sA-bq-EgG" customClass="KCkrezeTableViewCell" customModule="MxPlayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5sA-bq-EgG" id="MKp-bU-jcc">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c28" translatesAutoresizingMaskIntoConstraints="NO" id="qLs-5e-B1H">
+                        <rect key="frame" x="4" y="5" width="150" height="136"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="136" id="eWO-up-ECf"/>
+                            <constraint firstAttribute="width" constant="150" id="kTw-2E-QId"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf8-DT-kRL">
+                        <rect key="frame" x="159" y="4" width="228" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="rKH-5Z-ipD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvK-Xx-63y">
+                        <rect key="frame" x="159" y="29" width="228" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="hUY-hp-I7g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="CvK-Xx-63y" secondAttribute="trailing" constant="4" id="Fda-7c-sZt"/>
+                    <constraint firstAttribute="bottom" secondItem="qLs-5e-B1H" secondAttribute="bottom" constant="5" id="Ieq-Ye-FYO"/>
+                    <constraint firstItem="CvK-Xx-63y" firstAttribute="top" secondItem="qf8-DT-kRL" secondAttribute="bottom" constant="5" id="L4T-fg-HQ3"/>
+                    <constraint firstAttribute="trailing" secondItem="qf8-DT-kRL" secondAttribute="trailing" constant="4" id="cDs-GS-qJy"/>
+                    <constraint firstItem="qf8-DT-kRL" firstAttribute="top" secondItem="MKp-bU-jcc" secondAttribute="top" constant="4" id="hAK-nr-LDV"/>
+                    <constraint firstItem="CvK-Xx-63y" firstAttribute="leading" secondItem="qLs-5e-B1H" secondAttribute="trailing" constant="5" id="l8S-s9-tiY"/>
+                    <constraint firstItem="qLs-5e-B1H" firstAttribute="top" secondItem="MKp-bU-jcc" secondAttribute="top" constant="5" id="mWz-AJ-5gp"/>
+                    <constraint firstItem="qLs-5e-B1H" firstAttribute="leading" secondItem="MKp-bU-jcc" secondAttribute="leading" constant="4" id="nqO-c4-AsK"/>
+                    <constraint firstItem="qf8-DT-kRL" firstAttribute="leading" secondItem="qLs-5e-B1H" secondAttribute="trailing" constant="5" id="vd0-iL-GrH"/>
+                    <constraint firstAttribute="bottom" secondItem="qLs-5e-B1H" secondAttribute="bottom" constant="5" id="wwz-yC-saY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="oji-Rn-Fx4"/>
+            <connections>
+                <outlet property="imageimageKCKreze" destination="qLs-5e-B1H" id="qYL-Ms-LbZ"/>
+                <outlet property="nameimageKCKrezeLabel" destination="qf8-DT-kRL" id="9F0-2k-Q0I"/>
+                <outlet property="subTitleimageKCKrezeLabel" destination="CvK-Xx-63y" id="zsb-m4-ILv"/>
+            </connections>
+            <point key="canvasLocation" x="133.58778625954199" y="-89.436619718309871"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="c28" width="400" height="660"/>
+    </resources>
+</document>

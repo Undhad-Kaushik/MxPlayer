@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Ccell10" id="gTV-IL-0wX" customClass="VideoTenCollectionViewCell" customModule="MxPlayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c16" translatesAutoresizingMaskIntoConstraints="NO" id="ndR-Ih-o32">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="tiH-28-Ms1"/>
+                            <constraint firstAttribute="height" constant="140" id="uvc-Wa-QMp"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ndR-Ih-o32" secondAttribute="bottom" id="EQf-MQ-ObW"/>
+                <constraint firstItem="ndR-Ih-o32" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Jho-aa-PZ2"/>
+                <constraint firstItem="ndR-Ih-o32" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MTc-QM-wMN"/>
+                <constraint firstAttribute="trailing" secondItem="ndR-Ih-o32" secondAttribute="trailing" id="mcC-c3-5b9"/>
+            </constraints>
+            <size key="customSize" width="140" height="140"/>
+            <connections>
+                <outlet property="tenImageView" destination="ndR-Ih-o32" id="WOF-eK-zh3"/>
+            </connections>
+            <point key="canvasLocation" x="293.12977099236639" y="88.028169014084511"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="c16" width="909" height="1313"/>
+    </resources>
+</document>
